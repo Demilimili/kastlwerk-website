@@ -31,6 +31,14 @@
   .btn-ghost{border-color:var(--copper-l);color:var(--copper-l)}
   .btn-ghost:hover{background:rgba(216,154,91,.12)}
   .btn:focus-visible,a:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  @media(max-width:560px){
+    .cta .btn{flex:1 1 100%;text-align:center;padding:15px 20px}
+    .hero{padding:64px 0 56px}
+    .card .btn{display:block;text-align:center}
+    section{padding:60px 0}
+    .freecheck{padding:30px 22px}
+  }
 
   /* Header */
   header{background:var(--navy);position:sticky;top:0;z-index:50;border-bottom:1px solid var(--navy2)}
@@ -137,8 +145,10 @@
     <span class="badge"><span class="dot"></span>Termine ab Oktober 2026 – jetzt reservieren</span>
     <h1>WLAN, das <em>einfach funktioniert.</em></h1>
     <p class="lead">Professionelle Heimnetzwerke in Niederösterreich – geplant, eingerichtet und dokumentiert wie im Rechenzentrum. Für Wohnungen und Häuser, die mehr brauchen als den Router vom Provider.</p>
-    <a class="btn btn-primary" href="#buchen">Kostenlosen WLAN-Check buchen</a>
-    <a class="btn btn-ghost" href="#pakete" style="margin-left:10px">Pakete ansehen</a>
+    <div class="cta">
+      <a class="btn btn-primary" href="#buchen">Kostenlosen WLAN-Check buchen</a>
+      <a class="btn btn-ghost" href="#pakete">Pakete ansehen</a>
+    </div>
   </div>
 </div>
 
